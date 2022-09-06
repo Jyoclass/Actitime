@@ -1,87 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-02T21:42:57 IST" name="Suite" finished-at="2022-09-02T21:42:57 IST" duration-ms="91">
+  <suite started-at="2022-09-06T14:23:00 IST" name="Suite" finished-at="2022-09-06T14:23:00 IST" duration-ms="67">
     <groups>
     </groups>
-    <test started-at="2022-09-02T21:42:57 IST" name="Test" finished-at="2022-09-02T21:42:57 IST" duration-ms="91">
+    <test started-at="2022-09-06T14:23:00 IST" name="Test1" finished-at="2022-09-06T14:23:00 IST" duration-ms="67">
       <class name="Task.Customer">
-        <test-method is-config="true" signature="login_actitime()[pri:0, instance:Task.Customer@29647f75]" started-at="2022-09-02T21:42:57 IST" name="login_actitime" finished-at="2022-09-02T21:42:57 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@3315d2d7]" started-at="2022-09-06T14:23:00 IST" name="login_actitime" finished-at="2022-09-06T14:23:00 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_actitime -->
-        <test-method signature="createcustomer()[pri:1, instance:Task.Customer@29647f75]" started-at="2022-09-02T21:42:57 IST" name="createcustomer" finished-at="2022-09-02T21:42:57 IST" duration-ms="8" status="PASS">
+        <test-method signature="createcustomer()[pri:0, instance:Task.Customer@3315d2d7]" started-at="2022-09-06T14:23:00 IST" name="createcustomer" finished-at="2022-09-06T14:23:00 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createcustomer -->
-        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@29647f75]" started-at="2022-09-02T21:42:57 IST" name="logout_actitime" finished-at="2022-09-02T21:42:57 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout_actitime -->
-        <test-method signature="deletcustomer()[pri:2, instance:Task.Customer@29647f75]" started-at="2022-09-02T21:42:57 IST" name="deletcustomer" finished-at="2022-09-02T21:42:57 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deletcustomer -->
-        <test-method is-config="true" signature="login_actitime()[pri:0, instance:Task.Customer@29647f75]" started-at="2022-09-02T21:42:57 IST" name="login_actitime" finished-at="2022-09-02T21:42:57 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login_actitime -->
-        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@29647f75]" started-at="2022-09-02T21:42:57 IST" name="logout_actitime" finished-at="2022-09-02T21:42:57 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout_actitime -->
-        <test-method is-config="true" signature="login_actitime()[pri:0, instance:Task.Customer@29647f75]" started-at="2022-09-02T21:42:57 IST" name="login_actitime" finished-at="2022-09-02T21:42:57 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login_actitime -->
-        <test-method signature="archivecustomer()[pri:3, instance:Task.Customer@29647f75]" started-at="2022-09-02T21:42:57 IST" name="archivecustomer" finished-at="2022-09-02T21:42:57 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- archivecustomer -->
-        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@29647f75]" started-at="2022-09-02T21:42:57 IST" name="logout_actitime" finished-at="2022-09-02T21:42:57 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@3315d2d7]" started-at="2022-09-06T14:23:00 IST" name="logout_actitime" finished-at="2022-09-06T14:23:00 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout_actitime -->
       </class> <!-- Task.Customer -->
-      <class name="Task.Project">
-        <test-method signature="add_task_project()[pri:0, instance:Task.Project@b62d79]" started-at="2022-09-02T21:42:57 IST" name="add_task_project" finished-at="2022-09-02T21:42:57 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_task_project -->
-        <test-method is-config="true" signature="login_actitime()[pri:0, instance:Task.Project@b62d79]" started-at="2022-09-02T21:42:57 IST" name="login_actitime" finished-at="2022-09-02T21:42:57 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login_actitime -->
-        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Project@b62d79]" started-at="2022-09-02T21:42:57 IST" name="logout_actitime" finished-at="2022-09-02T21:42:57 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout_actitime -->
-        <test-method is-config="true" signature="login_actitime()[pri:0, instance:Task.Project@b62d79]" started-at="2022-09-02T21:42:57 IST" name="login_actitime" finished-at="2022-09-02T21:42:57 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login_actitime -->
-        <test-method signature="createproject()[pri:0, instance:Task.Project@b62d79]" started-at="2022-09-02T21:42:57 IST" name="createproject" finished-at="2022-09-02T21:42:57 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createproject -->
-        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Project@b62d79]" started-at="2022-09-02T21:42:57 IST" name="logout_actitime" finished-at="2022-09-02T21:42:57 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout_actitime -->
-        <test-method is-config="true" signature="login_actitime()[pri:0, instance:Task.Project@b62d79]" started-at="2022-09-02T21:42:57 IST" name="login_actitime" finished-at="2022-09-02T21:42:57 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login_actitime -->
-        <test-method signature="deleteproject()[pri:0, instance:Task.Project@b62d79]" started-at="2022-09-02T21:42:57 IST" name="deleteproject" finished-at="2022-09-02T21:42:57 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteproject -->
-        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Project@b62d79]" started-at="2022-09-02T21:42:57 IST" name="logout_actitime" finished-at="2022-09-02T21:42:57 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout_actitime -->
-      </class> <!-- Task.Project -->
-    </test> <!-- Test -->
+    </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

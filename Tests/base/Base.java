@@ -1,14 +1,25 @@
 package base;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 public class Base 
 {
+	
+
+	
     @BeforeMethod
-    public void login_actitime()
+    @Parameters({"url","username","password"}) 
+    public void login_actitime(String url,String un,String pwd)
     {
-    	System.out.println("Login to actitime application");
+    	System.out.println("Login to actitime application "+url+" "+un+" "+pwd);
     }
     
     @AfterMethod
