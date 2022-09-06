@@ -3,14 +3,14 @@
 <suite name="Suite">
   
   <test thread-count="5" name="Test1" >
+    <parameter name="browser" value="chrome" />
     <parameter name="url" value="http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b" />
     <parameter name="username" value="admin" />
     <parameter name="password" value="manager" />
- 
     <classes>
       <class name="Task.Customer"/> 
     </classes>
   </test> <!-- Test -->
  
-  
+ 
 </suite> <!-- Suite -->
