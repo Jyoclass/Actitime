@@ -8,9 +8,9 @@ public class Customer extends Base
 {
 
 	@Test()
-	public void createcustomer() throws InterruptedException 
+	public void createcustomer() 
 	{
-		     Thread.sleep(1000);
+		     
 		
 			System.out.println("create the customer");
 			

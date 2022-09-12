@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="password" value="manager"/>
+    <parameter name="browser" value="ie"/>
+    <parameter name="url" value="http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="Task.Customer">
+        <methods>
+          <include name="logout_actitime"/>
+          <include name="login_actitime"/>
+          <include name="createcustomer"/>
+        </methods>
+      </class> <!-- Task.Customer -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

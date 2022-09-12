@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base 
 {
-	 static WebDriver driver=null;
+	public static WebDriver driver;
 
 	
     @BeforeMethod
@@ -28,7 +28,7 @@ public class Base
     		driver= WebDriverManager.firefoxdriver().create();
     	break;
     	case "ie":
-    		driver= WebDriverManager.iedriver().create();
+    		driver= WebDriverManager.edgedriver().create();
     	break;
         }
     	

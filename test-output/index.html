@@ -146,6 +146,7 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
     &lt;parameter name=&quot;password&quot; value=&quot;manager&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;ie&quot;/&gt;
     &lt;parameter name=&quot;url&quot; value=&quot;http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b&quot;/&gt;
     &lt;parameter name=&quot;username&quot; value=&quot;admin&quot;/&gt;
     &lt;classes&gt;
@@ -193,12 +194,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createcustomer')
 data.setCell(0, 2, 'Task.Customer')
-data.setCell(0, 3, 10);
+data.setCell(0, 3, 7);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 ms</span>
+              <span class="suite-total-time">Total running time: 7 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -226,16 +227,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Task.Customer</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">login_actitime(http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b, admin, manager)</span>
+                <span class="method-name">login_actitime(ie, http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b, admin, manager)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createcustomer</span>
-                <span class="method-start">9 ms</span>
+                <span class="method-start">6496 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logout_actitime</span>
-                <span class="method-start">23 ms</span>
+                <span class="method-start">6507 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
