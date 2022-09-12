@@ -17,10 +17,14 @@ public class Run {
 	  FileInputStream fi=new FileInputStream(".\\Testdata\\sample.xlsx");
 	  //Apache POI API Based On OPC and OOXML Schemas » 5.2.2
 	  Workbook wb=new XSSFWorkbook(fi);
-	  Sheet sh=wb.getSheet("cities");
-	  Row  rw= sh.getRow(1);
-	  Cell c1=rw.getCell(0);
-	  System.out.println(c1.getStringCellValue());
+	  Sheet sh=wb.getSheet("cities");	  
+	 // Row  rw= sh.getRow(1);
+	 // Cell c1=rw.getCell(0);
+	 // System.out.println(c1.getStringCellValue());
+	  
+	// System.out.println(sh.getRow(0).getCell(1).getStringCellValue());;
+	//  System.out.println(sh.getLastRowNum()); retrieves the las row number of a sheet
+	//  System.out.println(sh.getRow(1).getLastCellNum()); retrives last cell  number of a row
 
 	}
 
