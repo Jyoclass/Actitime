@@ -2,9 +2,11 @@ package Ultility;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -15,17 +17,19 @@ public class Run {
 	public static void main(String[] args) throws IOException
 	{
 	  FileInputStream fi=new FileInputStream(".\\Testdata\\sample.xlsx");
-	  //Apache POI API Based On OPC and OOXML Schemas » 5.2.2
 	  Workbook wb=new XSSFWorkbook(fi);
-	  Sheet sh=wb.getSheet("cities");	  
-	 // Row  rw= sh.getRow(1);
-	 // Cell c1=rw.getCell(0);
-	 // System.out.println(c1.getStringCellValue());
-	  
-	// System.out.println(sh.getRow(0).getCell(1).getStringCellValue());;
-	//  System.out.println(sh.getLastRowNum()); retrieves the las row number of a sheet
-	//  System.out.println(sh.getRow(1).getLastCellNum()); retrives last cell  number of a row
-
+	  Sheet sh=wb.getSheet("Sheet1");	  
+	  Row  rw= sh.createRow(0);
+	  Cell c1=rw.createCell(3);
+	  c1.setCellType(CellType.STRING);
+	  c1.setCellValue("australia");
+	  FileOutputStream fo=new FileOutputStream(".\\Testdata\\sample.xlsx");
+	  wb.write(fo);
+	  fo.flush();
+	  wb.close();
+	  fo.close();
+	  fi.close();
+	
 	}
 
 }
