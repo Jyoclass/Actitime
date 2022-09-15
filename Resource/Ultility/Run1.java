@@ -16,8 +16,8 @@ class Run1
 {
     public static void main(String args[]) throws IOException
 	{
-    	  FileInputStream fi=new FileInputStream(".\\Testdata\\sample.xlsx");
-    	  Workbook wb=new XSSFWorkbook(fi);
+     FileInputStream fi=new FileInputStream(".\\Testdata\\sample.xlsx");
+     Workbook wb=new XSSFWorkbook(fi);
     	Sheet sh=wb.getSheet("cities");	  
   	  Row  rw= sh.getRow(0);
   	  Cell c1=rw.createCell(0);
