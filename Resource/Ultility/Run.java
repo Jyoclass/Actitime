@@ -16,19 +16,10 @@ public class Run {
 
 	public static void main(String[] args) throws IOException
 	{
-	  FileInputStream fi=new FileInputStream(".\\Testdata\\sample.xlsx");
+	  FileInputStream fi=new FileInputStream(".\\Testdata\\customer.xlsx");
 	  Workbook wb=new XSSFWorkbook(fi);
-	  Sheet sh=wb.getSheet("Sheet1");	  
-	  Row  rw= sh.createRow(0);
-	  Cell c1=rw.createCell(3);
-	  c1.setCellType(CellType.STRING);
-	  c1.setCellValue("australia");
-	  FileOutputStream fo=new FileOutputStream(".\\Testdata\\sample.xlsx");
-	  wb.write(fo);
-	  fo.flush();
-	  wb.close();
-	  fo.close();
-	  fi.close();
+	  Sheet sh=wb.getSheet("custinfo");	  
+	  System.out.println(sh.getRow(0).getLastCellNum());
 	
 	}
 

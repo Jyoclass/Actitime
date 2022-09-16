@@ -16,6 +16,11 @@ public class Customer_dp
 		return Dataprovidercontroller.Customer_DC();
 	}
 	
-	
+	@DataProvider(name="deletecustomer")
+	public Object[][] deletecustomer () throws IOException
+	{
+		
+		return Dataprovidercontroller.deletecustomer_DC();
+	}
 	
 }

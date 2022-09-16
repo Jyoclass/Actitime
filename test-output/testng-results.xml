@@ -1,61 +1,970 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-15T21:23:08 IST" name="Default suite" finished-at="2022-09-15T21:23:09 IST" duration-ms="1215">
+  <suite started-at="2022-09-16T21:20:28 IST" name="Suite" finished-at="2022-09-16T21:22:33 IST" duration-ms="125166">
     <groups>
     </groups>
-    <test started-at="2022-09-15T21:23:08 IST" name="Default test" finished-at="2022-09-15T21:23:09 IST" duration-ms="1215">
+    <test started-at="2022-09-16T21:20:28 IST" name="Test1" finished-at="2022-09-16T21:22:33 IST" duration-ms="125166">
       <class name="Task.Customer">
-        <test-method signature="createcustomer(java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@3b6ddd1d]" started-at="2022-09-15T21:23:09 IST" name="createcustomer" data-provider="createcustomer" finished-at="2022-09-15T21:23:09 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:20:30 IST" name="login_actitime" finished-at="2022-09-16T21:20:34 IST" duration-ms="4690" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[LNT info Tech]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[service based company]]>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="createcustomer(java.lang.String,java.lang.String)[pri:1, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:20:34 IST" name="createcustomer" data-provider="createcustomer" finished-at="2022-09-16T21:20:37 IST" duration-ms="2636" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[service based company1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createcustomer -->
-        <test-method signature="createcustomer(java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@3b6ddd1d]" started-at="2022-09-15T21:23:09 IST" name="createcustomer" data-provider="createcustomer" finished-at="2022-09-15T21:23:09 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:20:37 IST" name="logout_actitime" finished-at="2022-09-16T21:20:37 IST" duration-ms="327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:20:37 IST" name="login_actitime" finished-at="2022-09-16T21:20:40 IST" duration-ms="3068" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[INTEL]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Product based company]]>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="createcustomer(java.lang.String,java.lang.String)[pri:1, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:20:40 IST" name="createcustomer" data-provider="createcustomer" finished-at="2022-09-16T21:20:42 IST" duration-ms="1934" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[service based company2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createcustomer -->
-        <test-method signature="createcustomer(java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@3b6ddd1d]" started-at="2022-09-15T21:23:09 IST" name="createcustomer" data-provider="createcustomer" finished-at="2022-09-15T21:23:09 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:20:42 IST" name="logout_actitime" finished-at="2022-09-16T21:20:43 IST" duration-ms="364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:20:43 IST" name="login_actitime" finished-at="2022-09-16T21:20:45 IST" duration-ms="2341" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Goldsman Sachs]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Product based company]]>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="createcustomer(java.lang.String,java.lang.String)[pri:1, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:20:45 IST" name="createcustomer" data-provider="createcustomer" finished-at="2022-09-16T21:20:48 IST" duration-ms="2877" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[service based company3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createcustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:20:48 IST" name="logout_actitime" finished-at="2022-09-16T21:20:48 IST" duration-ms="428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:20:48 IST" name="login_actitime" finished-at="2022-09-16T21:20:51 IST" duration-ms="2211" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="createcustomer(java.lang.String,java.lang.String)[pri:1, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:20:51 IST" name="createcustomer" data-provider="createcustomer" finished-at="2022-09-16T21:20:53 IST" duration-ms="2681" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[service based company4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createcustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:20:53 IST" name="logout_actitime" finished-at="2022-09-16T21:20:54 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:20:54 IST" name="login_actitime" finished-at="2022-09-16T21:20:57 IST" duration-ms="3203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="createcustomer(java.lang.String,java.lang.String)[pri:1, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:20:57 IST" name="createcustomer" data-provider="createcustomer" finished-at="2022-09-16T21:20:59 IST" duration-ms="1789" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[service based company5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createcustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:20:59 IST" name="logout_actitime" finished-at="2022-09-16T21:20:59 IST" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:20:59 IST" name="login_actitime" finished-at="2022-09-16T21:21:02 IST" duration-ms="3182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="createcustomer(java.lang.String,java.lang.String)[pri:1, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:02 IST" name="createcustomer" data-provider="createcustomer" finished-at="2022-09-16T21:21:04 IST" duration-ms="1747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[service based company6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createcustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:04 IST" name="logout_actitime" finished-at="2022-09-16T21:21:04 IST" duration-ms="289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:04 IST" name="login_actitime" finished-at="2022-09-16T21:21:06 IST" duration-ms="2092" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="createcustomer(java.lang.String,java.lang.String)[pri:1, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:06 IST" name="createcustomer" data-provider="createcustomer" finished-at="2022-09-16T21:21:09 IST" duration-ms="2573" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[service based company7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createcustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:09 IST" name="logout_actitime" finished-at="2022-09-16T21:21:09 IST" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:09 IST" name="login_actitime" finished-at="2022-09-16T21:21:11 IST" duration-ms="2188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="createcustomer(java.lang.String,java.lang.String)[pri:1, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:11 IST" name="createcustomer" data-provider="createcustomer" finished-at="2022-09-16T21:21:14 IST" duration-ms="2952" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[service based company8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createcustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:14 IST" name="logout_actitime" finished-at="2022-09-16T21:21:15 IST" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:15 IST" name="login_actitime" finished-at="2022-09-16T21:21:18 IST" duration-ms="3150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="createcustomer(java.lang.String,java.lang.String)[pri:1, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:18 IST" name="createcustomer" data-provider="createcustomer" finished-at="2022-09-16T21:21:20 IST" duration-ms="2058" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[service based company9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createcustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:20 IST" name="logout_actitime" finished-at="2022-09-16T21:21:20 IST" duration-ms="363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:20 IST" name="login_actitime" finished-at="2022-09-16T21:21:23 IST" duration-ms="3254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="createcustomer(java.lang.String,java.lang.String)[pri:1, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:23 IST" name="createcustomer" data-provider="createcustomer" finished-at="2022-09-16T21:21:25 IST" duration-ms="1736" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[service based company10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createcustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:25 IST" name="logout_actitime" finished-at="2022-09-16T21:21:25 IST" duration-ms="333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:25 IST" name="login_actitime" finished-at="2022-09-16T21:21:29 IST" duration-ms="3105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="createcustomer(java.lang.String,java.lang.String)[pri:1, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:29 IST" name="createcustomer" data-provider="createcustomer" finished-at="2022-09-16T21:21:30 IST" duration-ms="1847" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[service based company11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createcustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:30 IST" name="logout_actitime" finished-at="2022-09-16T21:21:31 IST" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:31 IST" name="login_actitime" finished-at="2022-09-16T21:21:34 IST" duration-ms="2975" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="deletecustomer(java.lang.String)[pri:2, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:34 IST" name="deletecustomer" data-provider="deletecustomer" finished-at="2022-09-16T21:21:36 IST" duration-ms="1954" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:36 IST" name="logout_actitime" finished-at="2022-09-16T21:21:36 IST" duration-ms="325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:36 IST" name="login_actitime" finished-at="2022-09-16T21:21:39 IST" duration-ms="3158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="deletecustomer(java.lang.String)[pri:2, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:39 IST" name="deletecustomer" data-provider="deletecustomer" finished-at="2022-09-16T21:21:41 IST" duration-ms="1889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:41 IST" name="logout_actitime" finished-at="2022-09-16T21:21:42 IST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:42 IST" name="login_actitime" finished-at="2022-09-16T21:21:45 IST" duration-ms="3167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="deletecustomer(java.lang.String)[pri:2, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:45 IST" name="deletecustomer" data-provider="deletecustomer" finished-at="2022-09-16T21:21:47 IST" duration-ms="1866" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:47 IST" name="logout_actitime" finished-at="2022-09-16T21:21:47 IST" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:47 IST" name="login_actitime" finished-at="2022-09-16T21:21:49 IST" duration-ms="2122" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="deletecustomer(java.lang.String)[pri:2, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:49 IST" name="deletecustomer" data-provider="deletecustomer" finished-at="2022-09-16T21:21:52 IST" duration-ms="2883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:52 IST" name="logout_actitime" finished-at="2022-09-16T21:21:52 IST" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:52 IST" name="login_actitime" finished-at="2022-09-16T21:21:57 IST" duration-ms="4705" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="deletecustomer(java.lang.String)[pri:2, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:21:57 IST" name="deletecustomer" data-provider="deletecustomer" finished-at="2022-09-16T21:22:00 IST" duration-ms="2802" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:00 IST" name="logout_actitime" finished-at="2022-09-16T21:22:00 IST" duration-ms="318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:00 IST" name="login_actitime" finished-at="2022-09-16T21:22:02 IST" duration-ms="2125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="deletecustomer(java.lang.String)[pri:2, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:02 IST" name="deletecustomer" data-provider="deletecustomer" finished-at="2022-09-16T21:22:05 IST" duration-ms="2800" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:05 IST" name="logout_actitime" finished-at="2022-09-16T21:22:05 IST" duration-ms="321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:05 IST" name="login_actitime" finished-at="2022-09-16T21:22:08 IST" duration-ms="2170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="deletecustomer(java.lang.String)[pri:2, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:08 IST" name="deletecustomer" data-provider="deletecustomer" finished-at="2022-09-16T21:22:10 IST" duration-ms="2892" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:10 IST" name="logout_actitime" finished-at="2022-09-16T21:22:11 IST" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:11 IST" name="login_actitime" finished-at="2022-09-16T21:22:14 IST" duration-ms="3190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="deletecustomer(java.lang.String)[pri:2, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:14 IST" name="deletecustomer" data-provider="deletecustomer" finished-at="2022-09-16T21:22:16 IST" duration-ms="2047" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:16 IST" name="logout_actitime" finished-at="2022-09-16T21:22:16 IST" duration-ms="347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:16 IST" name="login_actitime" finished-at="2022-09-16T21:22:20 IST" duration-ms="3139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="deletecustomer(java.lang.String)[pri:2, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:20 IST" name="deletecustomer" data-provider="deletecustomer" finished-at="2022-09-16T21:22:22 IST" duration-ms="2078" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:22 IST" name="logout_actitime" finished-at="2022-09-16T21:22:22 IST" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:22 IST" name="login_actitime" finished-at="2022-09-16T21:22:24 IST" duration-ms="2212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="deletecustomer(java.lang.String)[pri:2, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:24 IST" name="deletecustomer" data-provider="deletecustomer" finished-at="2022-09-16T21:22:27 IST" duration-ms="3003" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:27 IST" name="logout_actitime" finished-at="2022-09-16T21:22:28 IST" duration-ms="385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
+        <test-method is-config="true" signature="login_actitime(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:28 IST" name="login_actitime" finished-at="2022-09-16T21:22:30 IST" duration-ms="2155" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_actitime -->
+        <test-method signature="deletecustomer(java.lang.String)[pri:2, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:30 IST" name="deletecustomer" data-provider="deletecustomer" finished-at="2022-09-16T21:22:33 IST" duration-ms="2984" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LNT info Tech11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecustomer -->
+        <test-method is-config="true" signature="logout_actitime()[pri:0, instance:Task.Customer@2c35e847]" started-at="2022-09-16T21:22:33 IST" name="logout_actitime" finished-at="2022-09-16T21:22:33 IST" duration-ms="458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_actitime -->
       </class> <!-- Task.Customer -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
 </testng-results>
