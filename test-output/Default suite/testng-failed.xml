@@ -5,6 +5,7 @@
     <classes>
       <class name="Task.Customer">
         <methods>
+          <include name="deletecustomer"/>
           <include name="logout_actitime"/>
           <include name="login_actitime"/>
           <include name="createcustomer"/>

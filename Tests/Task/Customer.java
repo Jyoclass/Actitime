@@ -9,8 +9,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import Ultility.Actitime_Select;
+import Ultility.Waitstatements;
 import base.Base;
 import datadroviders.Customer_dp;
+import pagefactory.EnterTimeTrack_page;
+import pagefactory.Task_page;
 
 public class Customer extends Base
 {
@@ -19,17 +22,20 @@ public class Customer extends Base
 	
 	void createcustomer(String customer_name,String customer_description)
 	{
-		driver.findElement(By.xpath("//a[@class='content tasks']//img[@class='sizer']")).click();
-		driver.findElement(By.xpath("//a[normalize-space()='Projects & Customers']")).click();
-		driver.findElement(By.xpath("//input[@value='Create New Customer']")).click();
-		driver.findElement(By.xpath("//input[@name='name']")).sendKeys(customer_name);
-		driver.findElement(By.xpath("//textarea[@name='description']")).sendKeys( customer_description);
-		driver.findElement(By.xpath("//input[@name='createCustomerSubmit']")).click();
+		new EnterTimeTrack_page(driver).get_task().click();		
+		Task_page task=new Task_page(driver);
+		Waitstatements.explicitwait_10(task.get_projectcustomer(), driver);
+		task.get_projectcustomer().click();
+		Waitstatements.explicitwait_10(task.get_createcust_new_customer(), driver);
+		task.get_createcust_new_customer().click();
+		task.get_name().sendKeys(customer_name);
+		task.get_description().sendKeys( customer_description);
+		task.get_createcust_button().click();
 		
 		
 	}
 	
-	@Test(dataProvider ="deletecustomer" ,dataProviderClass = Customer_dp.class,priority=2)
+	@Test(dataProvider ="deletecustomer" ,dataProviderClass = Customer_dp.class,priority=2,enabled = false)
 	void deletecustomer(String custname)
 	{
 

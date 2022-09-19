@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pagefactory.Login_page;
 
 public class Base 
 {
@@ -34,9 +35,10 @@ public class Base
         }
     	driver.manage().window().maximize();
     	driver.get(url);
-    	driver.findElement(By.name("username")).sendKeys(un);
-    	driver.findElement(By.name("pwd")).sendKeys(pwd);
-    	driver.findElement(By.xpath("//a[@id='loginButton']")).click();
+    	Login_page lgn=new Login_page(driver);
+    	lgn.get_un().sendKeys(un);
+    	lgn.get_pwd().sendKeys(pwd);
+    	lgn.get_login().click();
     }
     
     @AfterMethod

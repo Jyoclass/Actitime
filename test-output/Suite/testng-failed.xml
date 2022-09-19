@@ -3,7 +3,7 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test1(failed)">
     <parameter name="password" value="manager"/>
-    <parameter name="browser" value="ie"/>
+    <parameter name="browser" value="chrome"/>
     <parameter name="url" value="http://127.0.0.1/login.do;jsessionid=b5n2f3ech8c9b"/>
     <parameter name="username" value="admin"/>
     <classes>
@@ -11,7 +11,7 @@
         <methods>
           <include name="logout_actitime"/>
           <include name="login_actitime"/>
-          <include name="createcustomer"/>
+          <include name="createcustomer" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- Task.Customer -->
     </classes>
