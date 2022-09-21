@@ -25,6 +25,9 @@ public class Task_page
 	@FindBy (xpath = "//input[@name='createCustomerSubmit']")
     private WebElement createcust_button;	
 	
+	@FindBy(xpath="(//span[@class='successmsg' or @class='errormsg'])[1]")
+    private WebElement message;	
+	
 	public WebElement get_projectcustomer()
 	{
 		return project_cust;
@@ -45,6 +48,11 @@ public class Task_page
 	public WebElement get_createcust_button()
 	{
 		return createcust_button;
+	}
+	
+	public WebElement get_message()
+	{
+		return message;
 	}
 	
 	

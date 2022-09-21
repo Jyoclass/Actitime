@@ -6,9 +6,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import Ultility.Actitime_Select;
+import Ultility.Logreport;
 import Ultility.Waitstatements;
 import base.Base;
 import datadroviders.Customer_dp;
@@ -17,8 +20,10 @@ import pagefactory.Task_page;
 
 public class Customer extends Base
 {
+	
+	
 
-	@Test(dataProvider ="createcustomer" ,dataProviderClass = Customer_dp.class,priority=1)
+	@Test(dataProvider ="createcustomer" ,dataProviderClass = Customer_dp.class)
 	
 	void createcustomer(String customer_name,String customer_description)
 	{
@@ -31,7 +36,10 @@ public class Customer extends Base
 		task.get_name().sendKeys(customer_name);
 		task.get_description().sendKeys( customer_description);
 		task.get_createcust_button().click();
-		
+		Waitstatements.explicitwait_10(task.get_message(), driver);
+		String actual_text=task.get_message().getText();
+		Logreport.loginfo(actual_text);
+		Assert.assertEquals("Customer \""+customer_name+"\" has been successfully created.",actual_text);
 		
 	}
 	

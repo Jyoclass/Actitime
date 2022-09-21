@@ -5,9 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pagefactory.Login_page;
@@ -16,11 +19,13 @@ public class Base
 {
 	public  WebDriver driver;
     public  WebDriverWait wait;
+    public SoftAssert sft=new SoftAssert();
 	
     @BeforeMethod
     @Parameters({"browser","url","username","password"}) 
     public void login_actitime(String browser,String url,String un,String pwd)
     {
+    	
     	switch(browser)
     	{
     	case "chrome":  
@@ -47,4 +52,6 @@ public class Base
     	driver.findElement(By.xpath("//a[@class='logout']")).click();
     	driver.close();
     }	
+    
+   
 }
