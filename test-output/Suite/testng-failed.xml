@@ -11,7 +11,7 @@
         <methods>
           <include name="logout_actitime"/>
           <include name="login_actitime"/>
-          <include name="createcustomer" invocation-numbers="3"/>
+          <include name="createcustomer" invocation-numbers="0 1 2 3"/>
         </methods>
       </class> <!-- Task.Customer -->
     </classes>

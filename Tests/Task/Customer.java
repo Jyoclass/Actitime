@@ -1,5 +1,6 @@
 package Task;
 
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -11,6 +12,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import Ultility.Actitime_Select;
+import Ultility.CaptureScreens;
 import Ultility.Logreport;
 import Ultility.Waitstatements;
 import base.Base;
@@ -25,7 +27,7 @@ public class Customer extends Base
 
 	@Test(dataProvider ="createcustomer" ,dataProviderClass = Customer_dp.class)
 	
-	void createcustomer(String customer_name,String customer_description)
+	void createcustomer(String customer_name,String customer_description) throws IOException
 	{
 		new EnterTimeTrack_page(driver).get_task().click();		
 		Task_page task=new Task_page(driver);
@@ -39,9 +41,10 @@ public class Customer extends Base
 		Waitstatements.explicitwait_10(task.get_message(), driver);
 		String actual_text=task.get_message().getText();
 		Logreport.loginfo(actual_text);
-		Assert.assertEquals("Customer \""+customer_name+"\" has been successfully created.",actual_text);
-		
+		Assert.assertEquals("Customer \""+customer_name+"\" has been successfully created.",actual_text);	
+		new CaptureScreens(driver).capturescreenshot(customer_name);
 	}
+	
 	
 	@Test(dataProvider ="deletecustomer" ,dataProviderClass = Customer_dp.class,priority=2,enabled = false)
 	void deletecustomer(String custname)
