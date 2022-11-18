@@ -61,6 +61,7 @@ public class Customer extends Base
 		wait=new WebDriverWait(driver,Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOf(pop));	
 		driver.findElement(By.xpath("//input[@id='deleteButton']")).click();
+		System.out.println("hi");
 	 	
 	}
 	
